@@ -1,17 +1,66 @@
-body {
-    display: flex;
-    margin: 0;
-    min-height: 100vh;
+@media all and (min-width: 1080px) {
+    body {
+        display: flex;
+        margin: 0;
+        text-align: justify;
+        font-family: "Segoe UI", sans-serif;
+        font-size: 12pt;
+    }
+
+    a {
+        text-decoration: none;
+        color: white;
+    }
+
+    ul {
+        padding-left: 10px;
+        min-height: 100vh;
+        min-width: 150px;
+        margin: 0;
+        background-color: #3d3d3d;
+        list-style-type: none;
+    }
+
+    .content {
+        padding: 0 35px 0 35px;
+    }
+
+    li {
+        padding: 20px 0 10px 0;
+    }
+
+    .about, .contacts {
+        display: none;
+    }
 }
 
-a {
-    text-decoration: none;
-    color: white;
+a[target="_blank"]::after {
+    content: "\21D7";
+    color: saddlebrown;
 }
 
-ul {
-    background-color: #3d3d3d;
-    list-style-type: none;
+a[target="_blank"]::before {
+    content: "\0066";
+    color: saddlebrown;
+    padding-right: 5px;
+}
+
+a[href="#about"]::before {
+    content: "\003F";
+    color: saddlebrown;
+    padding-right: 3px;
+}
+
+a[href="#main"]::before {
+    content: "\1f310";
+    color: saddlebrown;
+    padding-right: 3px;
+}
+
+a[href="#contacts"]::before {
+    content: "\260E";
+    color: saddlebrown;
+    padding-right: 3px;
 }
 
 
