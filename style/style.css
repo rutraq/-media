@@ -28,10 +28,10 @@
     li {
         padding: 20px 0 10px 0;
     }
+}
 
-    .about, .contacts {
-        display: none;
-    }
+#about, #contacts {
+    display: none;
 }
 
 a[target="_blank"]::after {
@@ -96,10 +96,6 @@ a[href="#contacts"]::before {
     li {
         padding: 20px 0 10px 0;
     }
-
-    .about, .contacts {
-        display: none;
-    }
 }
 
 @media all and (max-width: 640px) {
@@ -137,13 +133,6 @@ a[href="#contacts"]::before {
         display: inline-block;
         padding: 10px 50px 10px 50px;
     }
-
-    .about, .contacts {
-        display: none;
-    }
 }
 
-#about:hover .about {
-    display: block;
-}
 
