@@ -21,17 +21,13 @@
         list-style-type: none;
     }
 
-    .content {
+    #content {
         padding: 0 35px 0 35px;
     }
 
     li {
         padding: 20px 0 10px 0;
     }
-}
-
-#about, #contacts {
-    display: none;
 }
 
 a[target="_blank"]::after {
@@ -90,7 +86,7 @@ a[href="#contacts"]::before {
         list-style-type: none;
     }
 
-    .content {
+    #content {
         padding: 0 35px 0 35px;
     }
 
@@ -126,7 +122,7 @@ a[href="#contacts"]::before {
         list-style-type: none;
     }
 
-    .content {
+    #content {
         padding: 0 35px 0 35px;
     }
 
@@ -134,4 +130,20 @@ a[href="#contacts"]::before {
         display: inline-block;
         padding: 10px 50px 10px 50px;
     }
+}
+
+#content .content-item {
+    display: none;
+}
+
+#content .content-item:target {
+    display: block;
+}
+
+#content .content-item:last-child {
+    display: block;
+}
+
+#content .content-item:target ~ .content-item {
+    display: none;
 }
